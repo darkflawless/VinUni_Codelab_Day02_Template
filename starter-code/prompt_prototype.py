@@ -2,12 +2,14 @@
 Day 2 — AI Product Scoping (Vin Smart Future)
 Lightweight Prompt Boundary Prototyping
 
-Tên nhóm: [Điền tên nhóm của bạn]
-Danh sách thành viên:
-1. [Họ và tên Trưởng nhóm] - [Email]
-2. [Họ và tên Thành viên 2] - [Email]
-3. [Họ và tên Thành viên 3] - [Email]
-4. [Họ và tên Thành viên 4] - [Email]
+Tên nhóm : safe-drive
+Thành viên :
+Nguyễn Đức Phát : nguyenducphat.edu@gmail.com
+Đỗ Thành Đạt : dothanhdat10x@gmail.com
+Nguyễn Ngọc Minh : nnminh433@gmail.com
+Phạm Quang Đạt : phamqdat99@gmail.com
+Lâm Hoàng Phúc : lamhoangphuc2003st@gmail.com
+Chử Trần Phương Nam : tranphuongnam932004@gmail.com
 """
 
 import os
