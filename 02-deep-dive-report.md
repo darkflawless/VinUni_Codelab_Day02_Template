@@ -1,14 +1,21 @@
 <!-- ========================================================================== -->
-<!-- THÔNG TIN NHÓM & DANH SÁCH THÀNH VIÊN                                      -->
-<!-- Tên nhóm : safe-drive
-Thành viên :
-Nguyễn Đức Phát : nguyenducphat.edu@gmail.com
-Đỗ Thành Đạt : dothanhdat10x@gmail.com
-Nguyễn Ngọc Minh : nnminh433@gmail.com
-Phạm Quang Đạt : phamqdat99@gmail.com
-Lâm Hoàng Phúc : lamhoangphuc2003st@gmail.com
-Chử Trần Phương Nam : tranphuongnam932004@gmail.com
+
+<!-- THÔNG TIN NHÓM & DANH SÁCH THÀNH VIÊN                                     -->
+
+<!--
+Tên nhóm: safe-drive
+
+Thành viên:
+Nguyễn Đức Phát: nguyenducphat.edu@gmail.com
+Đỗ Thành Đạt: dothanhdat10x@gmail.com
+Nguyễn Ngọc Minh: nnminh433@gmail.com
+Phạm Quang Đạt: phamqdat99@gmail.com
+Lâm Hoàng Phúc: lamhoangphuc2003st@gmail.com
+Chử Trần Phương Nam: tranphuongnam932004@gmail.com
+-->
+
 <!-- ========================================================================== -->
+
 
 # 02 — Báo Cáo Phân Tích Chuyên Sâu (Problem Deep-Dive Report)
 ## Hệ Thống Trợ Lý AI Co-pilot Hỗ Trợ Điều Vận Sự Cố Cạn Pin Taxi Điện Xanh SM

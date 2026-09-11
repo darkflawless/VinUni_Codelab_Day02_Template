@@ -48,7 +48,7 @@ def evaluate_prompt(user_input: str) -> str:
     Calls the Gemini 2.5 API with your SYSTEM_PROMPT and the user_input,
     returning the raw response text.
     """
-    api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY") or "AIzaSyDzrVy1q-zbubPrgAhvZhCvBK3XjskJhEc"
+    api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
     os.environ["GEMINI_API_KEY"] = api_key
     
     try:
