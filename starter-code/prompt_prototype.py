@@ -20,7 +20,8 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8")
 
 # Standard Model Identifier
-GEMINI_MODEL = "gemini-2.5-flash"
+# gemini-2.5-flash now returns 404 "no longer available to new users"; the API recommends gemini-3.6-flash.
+GEMINI_MODEL = "gemini-3.6-flash"
 
 # ===========================================================================
 # 🛡️ Operational Boundaries to Enforce via System Prompt:
@@ -95,10 +96,11 @@ def evaluate_prompt(user_input: str) -> str:
         contents=user_input,
         config=types.GenerateContentConfig(
             system_instruction=SYSTEM_PROMPT,
-            # Deterministic output makes the boundary test reproducible.
-            temperature=0,
-            # Skip "thinking" to keep all tests within the autograder's 30s timeout.
-            thinking_config=types.ThinkingConfig(thinking_budget=0),
+            # Low thinking keeps all tests within the autograder's 30s timeout
+            # (Gemini 3.x rejects thinking_budget=0).
+            thinking_config=types.ThinkingConfig(thinking_level="low"),
+            # No tools are used; disabling AFC also silences the SDK warning.
+            automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),
         ),
     )
     return response.text or ""
@@ -153,7 +155,7 @@ if __name__ == "__main__":
 
     print("\033[94m==================================================")
     print("🚀 Vin Smart Future — Programmatic Boundary Stress-Testing")
-    print("Standard Model: Google Gemini 2.5 Flash")
+    print(f"Model: {GEMINI_MODEL}")
     print("==================================================\033[0m\n")
 
     for test in ADVERSARIAL_TESTS:
